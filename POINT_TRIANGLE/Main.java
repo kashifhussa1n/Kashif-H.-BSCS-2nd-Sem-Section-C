@@ -3,14 +3,16 @@ package POINT_TRIANGLE;
 public class Main {
     public static void main(String[] args) {
 
-        Point triangle = new Point();
+        Point point = new Point();
 
-        triangle.point1(0, 0);
-        triangle.point2(3, 0);
-        triangle.point3(0, 4);
+        point.point1(2, 0);
+        point.point2(2, 0);
+        point.point3(2, 0);
 
-        if (triangle.sideAB() == triangle.sideBC() && triangle.sideBC() == triangle.sideCA()) {
+        if (point.sideAB() == point.sideBC() && point.sideBC() == point.sideCA()) {
             System.out.println("Equilateral Triangle");
+        } else {
+            System.out.println("Not Equilateral");
         }
     }
 }
