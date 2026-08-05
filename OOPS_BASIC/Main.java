@@ -11,14 +11,12 @@ public class Main {
         // class | name = create new object | Constructor(reference)
         // Scanner scanner = new Scanner(System.in);
 
-        Car car = new Car();
+        Car car = new Car(); // create new object
 
-        car.isRunning = true;
-
-        System.out.println(car.make);
         System.out.println(car.model);
-        System.out.println(car.year);
-        System.out.println(car.price);
+
+        car.Start(); // call out method using car. because in seperate files we need to access car
+                     // class using dot
         System.out.println(car.isRunning);
     }
 }
