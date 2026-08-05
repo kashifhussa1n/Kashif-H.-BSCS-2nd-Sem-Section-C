@@ -1,3 +1,5 @@
+package OOPS_BASIC;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -10,6 +12,13 @@ public class Main {
         // Scanner scanner = new Scanner(System.in);
 
         Car car = new Car();
+
+        car.isRunning = true;
+
+        System.out.println(car.make);
         System.out.println(car.model);
+        System.out.println(car.year);
+        System.out.println(car.price);
+        System.out.println(car.isRunning);
     }
 }
