@@ -9,4 +9,12 @@ public class Point {
         this.x = x;
         this.y = y;
     }
+
+    double sideDistance(Point that) {
+        double dx = this.x - that.x;
+        double dy = this.y - that.y;
+        double pythagoras = Math.sqrt((dx * dx) + (dy * dy));
+        return pythagoras;
+    }
+
 }
