@@ -7,5 +7,8 @@ public class Main {
         Point point2 = new Point(3, 0);
         Point point3 = new Point(0, 4);
 
+        point1.Print();
+        point2.Print();
+        point3.Print();
     }
 }

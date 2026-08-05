@@ -18,5 +18,7 @@ public class Main {
         car.Start(); // call out method using car. because in seperate files we need to access car
                      // class using dot
         System.out.println(car.isRunning);
+
+        car.Print();
     }
 }

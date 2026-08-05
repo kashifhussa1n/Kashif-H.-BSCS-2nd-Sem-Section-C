@@ -17,4 +17,7 @@ public class Point {
         return pythagoras;
     }
 
+    void Print() {
+        System.out.println("(" + x + "," + y + ")");
+    }
 }
