@@ -1,3 +1,5 @@
+package TRIANGLE_CLASS;
+
 public class Triangle {
     private double sideA;
     private double sideB;
@@ -63,9 +65,21 @@ public class Triangle {
         double c = sideC;
         double temp;
 
-        if (a > b) { temp = a; a = b; b = temp; }
-        if (b > c) { temp = b; b = c; c = temp; }
-        if (a > b) { temp = a; a = b; b = temp; }
+        if (a > b) {
+            temp = a;
+            a = b;
+            b = temp;
+        }
+        if (b > c) {
+            temp = b;
+            b = c;
+            c = temp;
+        }
+        if (a > b) {
+            temp = a;
+            a = b;
+            b = temp;
+        }
 
         double epsilon = 1e-9;
         return Math.abs(a * a + b * b - c * c) < epsilon;
