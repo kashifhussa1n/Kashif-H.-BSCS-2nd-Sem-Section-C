@@ -47,8 +47,21 @@ public class Triangle {
     }
 
     // count object METHOD
-   static int objectCount() {
+    static int objectCount() {
         return Count;
+    }
+
+    // perimeter METHOD
+    double perimeter() {
+        return sideA + sideB + sideC;
+    }
+
+    boolean isRightAngle() {
+        if (sideA == sideB + sideC) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
 }
