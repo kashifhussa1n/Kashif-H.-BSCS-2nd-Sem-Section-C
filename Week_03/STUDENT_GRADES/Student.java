@@ -1,3 +1,5 @@
+package STUDENT_GRADES;
+
 import java.util.Scanner;
 
 public class Student {
