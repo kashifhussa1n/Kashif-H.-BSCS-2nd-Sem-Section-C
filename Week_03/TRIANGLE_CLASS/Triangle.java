@@ -70,6 +70,8 @@ public class Triangle {
     }
 
     // To String Method
-    
+    public String toString() {
+        return sideA + " " + sideB + " " + sideC;
+    }
 
 }
