@@ -5,7 +5,7 @@ public class Main {
         Triangle t1 = new Triangle();
         Triangle t2 = new Triangle(1);
         Triangle t3 = new Triangle(1,2);
-        Triangle t4 = new Triangle(5,3,4);
+        Triangle t4 = new Triangle(3,5,4);
         Triangle t5 = new Triangle(t4);
 
         // System.out.println(t1.sideA + " " + t1.sideB + " " + t1.sideC);
@@ -16,6 +16,7 @@ public class Main {
 
         System.out.println(Triangle.objectCount());
         System.out.println(t4.perimeter());
-        System.out.println(t1.isRightAngle());
+        System.out.println(t4.isRightAngle());
+        System.out.println();
     }
 }

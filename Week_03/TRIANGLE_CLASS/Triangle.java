@@ -56,12 +56,20 @@ public class Triangle {
         return sideA + sideB + sideC;
     }
 
+    // right angle check METHOD
     boolean isRightAngle() {
-        if (sideA == sideB + sideC) {
+        if (sideA * sideA == sideB * sideB + sideC * sideC) {
+            return true;
+        } else if (sideB * sideB == sideA * sideA + sideC * sideC) {
+            return true;
+        } else if (sideC * sideC == sideA * sideA + sideB * sideB) {
             return true;
         } else {
             return false;
         }
     }
+
+    // To String Method
+    
 
 }
