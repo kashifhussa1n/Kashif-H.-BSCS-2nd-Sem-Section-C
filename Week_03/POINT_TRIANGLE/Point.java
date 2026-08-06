@@ -33,7 +33,15 @@ public class Point {
     }
 
     public String toString() {
-        return "Point1: (" + x1 + "," + y1 + ") Point2: (" + x2 + "," + y2 + ") Point3: (" + x3 + "," + y3 + ")";
+
+        return "Triangle[\n" +
+                "  Corner 1: (" + x1 + ", " + y1 + ")\n" +
+                "  Corner 2: (" + x2 + ", " + y2 + ")\n" +
+                "  Corner 3: (" + x3 + ", " + y3 + ")\n" +
+                "  Side AB: " + sideAB() + "\n" +
+                "  Side BC: " + sideBC() + "\n" +
+                "  Side CA: " + sideCA() + "\n" +
+                "]";
     }
 
 }
