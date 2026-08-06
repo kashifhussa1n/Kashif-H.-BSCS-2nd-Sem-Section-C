@@ -35,6 +35,8 @@ public class Student {
             scoreTest2 = scanner.nextDouble();
         }
 
+        scanner.close();
+
     }
 
     // average method
