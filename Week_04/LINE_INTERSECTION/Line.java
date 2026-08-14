@@ -2,6 +2,7 @@ package Week_04.LINE_INTERSECTION;
 
 class Line {
 
+    // REVISE DURING PRACTICING!!!1
     // since; y = mx + b
     // then; x = (y - b) / m
     /*
