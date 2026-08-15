@@ -38,7 +38,7 @@ public class Triangle {
         Count++;
     }
 
-    // clone constructor
+    // clone/copy constructor
     Triangle(Triangle t) {
         this.sideA = t.sideA;
         this.sideB = t.sideB;
