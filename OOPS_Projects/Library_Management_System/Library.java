@@ -1,4 +1,4 @@
-package OOPS_Projects.Libraray_Management_System;
+package OOPS_Projects.Library_Management_System;
 
 import java.util.ArrayList;
 import java.util.List;
