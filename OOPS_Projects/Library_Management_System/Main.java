@@ -38,7 +38,8 @@ public class Main {
         // display borrowed books
         System.out.println("\nBorrowed Books After Return:");
         for (Book book : member1.getBorrowedBooks()) {
-            System.out.println(book.getTitle());
+            System.out.println("Title: " + book.getTitle() + "|" + " Author: " + book.getAuthor() + "|" + " ISBN: "
+                    + book.getIsbn());
         }
 
         // 1 book now returned now member can borrow another one
