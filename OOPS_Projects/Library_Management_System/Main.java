@@ -36,7 +36,7 @@ public class Main {
         System.out.println("\nReturn Book 1: " + actions.returnBooks(member1, book1));
 
         // display borrowed books
-        System.out.println("\nBorrowed Books After Return:");
+        System.out.println("\nBorrowed Books After Return by " + member1.getName() + ": ");
         for (Book book : member1.getBorrowedBooks()) {
             System.out.println("Title: " + book.getTitle() + "|" + " Author: " + book.getAuthor() + "|" + " ISBN: "
                     + book.getIsbn());
