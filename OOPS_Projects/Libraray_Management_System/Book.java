@@ -5,12 +5,12 @@ public class Book {
     private boolean isBorrowed;
 
     // getter
-    String getTitle() {
+    public String getTitle() {
         return this.title;
     }
 
     // setter
-    void setTitle(String title) {
+    public void setTitle(String title) {
         this.title = title;
     }
 
@@ -41,6 +41,6 @@ public class Book {
 
     // setter
     public void setIsBorrowed(boolean isBorrowed) {
-        this.isBorrowed = true;
+        this.isBorrowed = isBorrowed;
     }
 }
