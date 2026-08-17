@@ -28,13 +28,5 @@ public class Member {
         return borrowedBooks;
     }
 
-    // METHOD to cap borrowBook at 3
-    public boolean borrowBooks(Book book) {
-        if (borrowedBooks.size() < 3) {
-            borrowedBooks.add(book);
-            return true;
-        }
-        return false;
-
-    }
+   
 }
