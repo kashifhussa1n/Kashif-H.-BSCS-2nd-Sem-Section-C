@@ -2,7 +2,7 @@ package OOPS_Projects.Library_Management_System;
 
 public class BorrowAndReturn {
 
-    public boolean borrowBooks(Book book, Member member) {
+    public boolean borrowBooks(Member member, Book book) {
 
         if (book.isBorrowed()) {
             return false;
@@ -17,7 +17,7 @@ public class BorrowAndReturn {
 
     }
 
-    public boolean returnBooks(Book book, Member member) {
+    public boolean returnBooks(Member member, Book book) {
         if (member.getBorrowedBooks().remove(book)) {
 
             book.setIsBorrowed(false);
