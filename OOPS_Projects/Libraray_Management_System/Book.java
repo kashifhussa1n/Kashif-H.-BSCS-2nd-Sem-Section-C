@@ -1,8 +1,15 @@
 package OOPS_Projects.Libraray_Management_System;
 
 public class Book {
-    private String title, author, isbn;
+    private String title, author;
+    private int isbn;
     private boolean isBorrowed;
+
+    public Book(String title, String author, int isbn) {
+        this.title = title;
+        this.author = author;
+        this.isbn = isbn;
+    }
 
     // getter
     public String getTitle() {
@@ -25,12 +32,12 @@ public class Book {
     }
 
     // getter
-    public String getIsbn() {
+    public int getIsbn() {
         return this.isbn;
     }
 
     // setter
-    public void setIsbn(String isbn) {
+    public void setIsbn(int isbn) {
         this.isbn = isbn;
     }
 
