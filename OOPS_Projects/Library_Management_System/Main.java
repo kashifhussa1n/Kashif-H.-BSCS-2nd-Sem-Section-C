@@ -3,7 +3,6 @@ package OOPS_Projects.Library_Management_System;
 public class Main {
     public static void main(String[] args) {
 
-
         // books
         Book book1 = new Book("Harry Potter", "J.K. Rowling", 101);
         Book book2 = new Book("Atomic Habits", "James Clear", 102);
