@@ -9,7 +9,12 @@ public class RationalNumber {
     }
 
     public RationalNumber(int numerator, int denominator) { // parametrized
+        if (denominator == 0) {
+            throw new IllegalArgumentException("Denominator can't be zero");
+        }
+
         this.numerator = numerator;
         this.denominator = denominator;
     }
+
 }
