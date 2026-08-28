@@ -13,13 +13,30 @@ public class RationalNumber {
             throw new IllegalArgumentException("Denominator can't be zero");
         }
 
-        this.numerator = numerator;
-        this.denominator = denominator;
+        int gcd = gcd(numerator, denominator); // GCD
+
+        this.numerator = numerator / gcd;
+        this.denominator = denominator / gcd;
     }
 
     public RationalNumber(RationalNumber r) { // copy
         this.numerator = r.numerator;
         this.denominator = r.denominator;
+    }
+
+    private int gcd(int a, int b) { //METHOD TO CALCULATE GCD
+
+        a = Math.abs(a);
+        b = Math.abs(b);
+
+        while (b != 0) {
+
+            int remainder = a % b;
+            a = b;
+            b = remainder;
+        }
+
+        return a;
     }
 
     @Override
