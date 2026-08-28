@@ -70,6 +70,7 @@ public class Triangle {
     }
 
     // To String Method
+    @Override
     public String toString() {
         return sideA + " " + sideB + " " + sideC;
     }
