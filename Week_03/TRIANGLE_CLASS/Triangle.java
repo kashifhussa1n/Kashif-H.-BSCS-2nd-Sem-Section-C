@@ -6,7 +6,7 @@ public class Triangle {
 
     public static int Count = 0;
 
-    // Constructor
+    // Null Constructor
     Triangle() {
         this.sideA = 1.0;
         this.sideB = 1.0;
