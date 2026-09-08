@@ -1,5 +1,3 @@
-package WORKSHEET_Q6;
-
 import java.util.Arrays;
 
 public class Array implements Cloneable {
