@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class Array implements Cloneable {
     private int[] anArray;
     private int value;
