@@ -1,4 +1,4 @@
-public class Array implements Cloneable {
+public class Array implements Cloneable { //WHEN CLONING ALL THE CLASS WILL BE IMPLEMENT CLONEABLE SO IT KNOWS THE OBJECT'S "CLONE" METHOD
     private int[] anArray;
     private int value;
 
@@ -8,7 +8,6 @@ public class Array implements Cloneable {
     }
 
     public void increment() {
-        this.anArray = new int[6];
         for (int i = 0; i < this.anArray.length; i++) {
             this.anArray[i]++;
         }
@@ -26,7 +25,14 @@ public class Array implements Cloneable {
     }
 
     @Override
-    public Array clone() throws CloneNotSupportedException {
-        return (Array) super.clone(); // shallow copy
+    public Array clone() throws CloneNotSupportedException { //SHALLOW CLONE
+        return (Array) super.clone(); 
+    }
+
+    @Override
+    public Array clone() throws CloneNotSupportedException { // DEEP CLONE
+        Array copy = (Array) super.clone(); // copy object
+        copy.anArray = this.anArray.clone(); // copy array
+        return copy;
     }
 }
