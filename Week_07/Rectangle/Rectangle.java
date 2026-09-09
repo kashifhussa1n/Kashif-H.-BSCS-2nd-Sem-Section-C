@@ -4,12 +4,17 @@ public class Rectangle implements Cloneable {
     private Point bottomRight;
 
     public Rectangle(Point p1, Point p2) {
-        this.topLeft = new Point(p1);     // each Rectangle gets its own Points
+        this.topLeft = new Point(p1); // each Rectangle gets its own Points
         this.bottomRight = new Point(p2);
     }
 
-    public Point getTopLeft() { return topLeft; }
-    public Point getBottomRight() { return bottomRight; }
+    public Point getTopLeft() {
+        return topLeft;
+    }
+
+    public Point getBottomRight() {
+        return bottomRight;
+    }
 
     // Overload of equals (parameter type Rectangle, not Object).
     // Relies on Point.equals(Point) to compare its own fields.
@@ -23,6 +28,14 @@ public class Rectangle implements Cloneable {
     public Object clone() throws CloneNotSupportedException {
         return super.clone();
     }
+
+    // @Override
+    // public Object clone() throws CloneNotSupportedException { //DEEP CLONE
+    //     Rectangle copy = (Rectangle) super.clone();
+    //     copy.topLeft = new Point(this.topLeft);
+    //     copy.bottomRight = new Point(this.bottomRight);
+    //     return copy;
+    // }
 
     @Override
     public String toString() {
